@@ -11,7 +11,8 @@ print("El programa inicia a las " + time.ctime())
 interruptor = str(input('¿Qué vamos a hacer hoy? '))
 while(exit == 0):
 
-    if interruptor == 'Salir' or interruptor == 'No':
+    os.chdir('/Users/fhva/Documents')
+    if interruptor == 'Salir' or interruptor == 'No' or interruptor == 'no':
         print('Gracias por usar Ready 2 Go')
         exit = 1
         break
@@ -23,10 +24,12 @@ while(exit == 0):
         print('Lanzando sus programas...')
         webbrowser.open_new("https://drive.google.com/drive/u/1/folders/0ABfuvAAzZODCUk9PVA")
         time.sleep(2)
-        webbrowser.open_new_tab('https://www.youtube.com/channel/UCSM3FVwdCIJfU0OdjKZb94A')
-        os.chdir('..')
-        os.chdir('ProyectoBloqueII/Ninosyninas/')
+        webbrowser.open_new_tab('https://www.youtube.com/watch?v=bmVKaAV_7-A')
+        os.chdir('ProyectoBloqueII')
+        os.chdir('Ninosyninas')
         os.system('code .')
+        os.chdir('..')
+        os.chdir('..')
         totalProgramas = 3
         
 
@@ -36,14 +39,15 @@ while(exit == 0):
         time.sleep(2)
         webbrowser.open_new('https://www.youtube.com/watch?v=bmVKaAV_7-A')
         webbrowser.open_new('https://www.google.com/')
-        os.chdir('..')
-        os.chdir('Ready2Go/')
+        os.chdir('Ready2Go')
         os.system('code .')
+        os.chdir('..')
         totalProgramas = 4
 
     elif interruptor == 'Relax' or interruptor == 'relax':
         os.system('open -a "/Applications/Spotify.app"')
-        webbrowser.open_new('https://www.youtube.com')    
+        webbrowser.open_new('https://www.youtube.com')
+        totalProgramas = 2    
 
     totalProgramas = str(totalProgramas)
 
