@@ -71,7 +71,7 @@ while(exit == 0):
 
     else:
         print('Comando no reconocido por el sistema, intente otra vez.')
-        continue
+        breakpoint
     totalProgramas = str(totalProgramas)
 
     print("Se han abierto " + totalProgramas + " programas" )
