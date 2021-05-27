@@ -69,6 +69,21 @@ while(exit == 0):
         webbrowser.open_new('https://www.twitch.tv')
         totalProgramas = 2    
 
+
+    if interruptor == 'ldaw' or interruptor == 'Ldaw':
+        print('Lanzando sus programas...')
+        webbrowser.open_new_tab('https://www.youtube.com/watch?v=bmVKaAV_7-A')
+        if dvs == 1:
+            os.chdir('LDAW')
+        elif dvs == 2:
+            os.chdir(r'C:/Users/ferva/Documents/LDAW')
+        os.system('code .')
+        if dvs ==1:
+            os.chdir('/Users/fhva/Documents')
+        elif dvs ==2:
+            os.chdir(r'C:/Users/ferva/Documents')
+        totalProgramas = 3
+
     else:
         print('Comando no reconocido por el sistema, intente otra vez.')
         breakpoint
