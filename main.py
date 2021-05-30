@@ -15,7 +15,12 @@ elif device == 'pc' or device == 'PC' or device == '2':
 interruptor = str(input('¿Qué vamos a hacer hoy? '))
 while(exit == 0):
 
-    #os.chdir('/Users/fhva/Documents')
+    if dvs ==1:
+            os.chdir('/Users/fhva/Documents')
+    elif dvs ==2:
+            os.chdir(r'C:/Users/ferva/Documents')
+
+            
     if interruptor == 'Salir' or interruptor == 'No' or interruptor == 'no':
         print('Gracias por usar Ready 2 Go')
         exit = 1
