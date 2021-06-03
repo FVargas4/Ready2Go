@@ -21,7 +21,7 @@ while(exit == 0):
             os.chdir(r'C:/Users/ferva/Documents')
 
             
-    if interruptor == 'Salir' or interruptor == 'No' or interruptor == 'no':
+    if interruptor == 'Salir' or interruptor == 'No' or interruptor == 'no' or interruptor == 'salir':
         print('Gracias por usar Ready 2 Go')
         exit = 1
         break
