@@ -47,7 +47,7 @@ while(exit == 0):
             os.chdir(r'C:/Users/ferva/Documents')
         totalProgramas = 3
         
-    if interruptor == 'progra' or interruptor == 'Progra':
+    elif interruptor == 'progra' or interruptor == 'Progra':
         print('Lanzando sus programas...')
         time.sleep(2)
         webbrowser.open_new_tab('https://experiencia21.tec.mx/courses/186016')
@@ -61,6 +61,22 @@ while(exit == 0):
         elif dvs ==2:
             os.chdir(r'C:/Users/ferva/Documents')
         totalProgramas = 3
+
+    if interruptor == 'quantitative' or interruptor == 'quantum':
+        print('Lanzando sus programas...')
+        time.sleep(2)
+        webbrowser.open_new_tab('https://experiencia21.tec.mx/courses/186016')
+        if dvs == 1:
+            os.chdir('QuanitiativeMethodsandSimulations')
+        elif dvs == 2:
+            os.chdir(r'C:/Users/ferva/Documents/QuanitiativeMethodsandSimulations')
+        os.system('code .')
+        if dvs ==1:
+            os.chdir('/Users/fhva/Documents')
+        elif dvs ==2:
+            os.chdir(r'C:/Users/ferva/Documents')
+        totalProgramas = 3
+    
 
     elif interruptor == 'R2G':
         print('Lanzando sus programas...')
