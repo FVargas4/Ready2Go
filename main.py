@@ -47,6 +47,20 @@ while(exit == 0):
             os.chdir(r'C:/Users/ferva/Documents')
         totalProgramas = 3
         
+    if interruptor == 'progra' or interruptor == 'Progra':
+        print('Lanzando sus programas...')
+        time.sleep(2)
+        webbrowser.open_new_tab('https://experiencia21.tec.mx/courses/186016')
+        if dvs == 1:
+            os.chdir('ProgramacionAvanzada')
+        elif dvs == 2:
+            os.chdir(r'C:/Users/ferva/Documents/ProgramacionAvanzada')
+        os.system('code .')
+        if dvs ==1:
+            os.chdir('/Users/fhva/Documents')
+        elif dvs ==2:
+            os.chdir(r'C:/Users/ferva/Documents')
+        totalProgramas = 3
 
     elif interruptor == 'R2G':
         print('Lanzando sus programas...')
