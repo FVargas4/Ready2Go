@@ -104,6 +104,14 @@ while(exit == 0):
             os.chdir(r'C:/Users/ferva/Documents')
         totalProgramas = 3 
 
+    elif interruptor == 'spotify' or interruptor == 'spotify':
+        if dvs == 1:
+            print('Lanzando Spotify')
+            os.chdir('../../../..')
+            os.chdir('Applications/')
+            os.system('open Spotify.app')
+
+
     else:
         print('Comando no reconocido por el sistema, intente otra vez.')
         breakpoint
