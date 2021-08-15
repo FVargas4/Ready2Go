@@ -92,6 +92,7 @@ while(exit == 0):
     elif interruptor == 'verano' or interruptor == 'Verano' or interruptor == 'porvenir':
         print('Lanzando sus programas...')
         webbrowser.open_new_tab('https://www.youtube.com/watch?v=bmVKaAV_7-A')
+        webbrowser.open_new_tab('https://drive.google.com/drive/u/2/folders/15ooSk6lyx34iuYV2k-WEvrinTOLzwtrQ')
         if dvs == 1:
             os.chdir('ProyectoVerano')
         elif dvs == 2:
