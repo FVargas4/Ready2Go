@@ -6,13 +6,19 @@ import time
 totalProgramas = 0
 interruptor = 0
 exit = 0
+dvs = 0
 print("El programa inicia a las " + time.ctime())
 device = str(input('Estas en Mac o PC? ', ))
 if device == 'mac' or device == 'Mac' or device == '1':
     dvs = 1
+    interruptor = str(input('¿Qué vamos a hacer hoy? '))
 elif device == 'pc' or device == 'PC' or device == '2':
     dvs = 2
-interruptor = str(input('¿Qué vamos a hacer hoy? '))
+    interruptor = str(input('¿Qué vamos a hacer hoy? '))
+else:
+    dvs = 3
+    print("Introduzca una opcion válida")
+
 while(exit == 0):
 
     if dvs ==1:
@@ -141,6 +147,22 @@ while(exit == 0):
             os.chdir('Applications/')
             os.system('open Spotify.app')
 
+    #https://www.youtube.com/playlist?list=PLmNaBlhoxd8ncktaL4G9X7MPBUnJTf-Pj
+    elif interruptor == 'django' or interruptor == 'Django' or interruptor == 'dj'or interruptor == 'Dj':
+        print('Lanzando sus programas...')
+        webbrowser.open_new_tab('https://www.youtube.com/watch?v=JT80XhYJdBw')
+        webbrowser.open_new_tab('http://127.0.0.1:8000/')
+        if dvs == 1:
+            os.chdir('DjangoP')
+        elif dvs == 2:
+            os.chdir(r'C:/Users/ferva/Documents/DjangoP')
+        os.system('code .')
+        if dvs ==1:
+            os.chdir('/Users/fhva/Documents')
+        elif dvs ==2:
+            os.chdir(r'C:/Users/ferva/Documents')
+        totalProgramas = 3 
+
 
     else:
         print('Comando no reconocido por el sistema, intente otra vez.')
@@ -148,6 +170,9 @@ while(exit == 0):
     totalProgramas = str(totalProgramas)
 
     print("Se han abierto " + totalProgramas + " programas" )
+
+    print("El programa termina a las " + time.ctime())
+
 
     newint = str(input('Algo más? '))
     interruptor = newint
