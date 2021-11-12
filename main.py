@@ -1,7 +1,8 @@
 import os
-import subprocess
 import webbrowser
 import time
+import functions as fun
+import tec_functions as tec
 
 totalProgramas = 0
 interruptor = 0
@@ -21,12 +22,8 @@ else:
 
 while(exit == 0):
 
-    if dvs ==1:
-            os.chdir('/Users/fhva/Documents')
-    elif dvs ==2:
-            os.chdir(r'C:/Users/ferva/Documents')
+    fun.returnToDocuments(dvs)
 
-            
     if interruptor == 'Salir' or interruptor == 'No' or interruptor == 'no' or interruptor == 'salir':
         print('Gracias por usar Ready 2 Go')
         exit = 1
@@ -37,69 +34,16 @@ while(exit == 0):
 
 
     if interruptor == 'bloque' or interruptor == 'Bloque':
-        print('Lanzando sus programas...')
-        webbrowser.open_new("https://drive.google.com/drive/u/1/folders/0ABfuvAAzZODCUk9PVA")
-        time.sleep(2)
-        webbrowser.open_new_tab('https://www.youtube.com/watch?v=bmVKaAV_7-A')
-        if dvs == 1:
-            os.chdir('ProyectoBloqueII')
-            os.chdir('Ninosyninas')
-        elif dvs == 2:
-            os.chdir(r'C:/Users/ferva/Documents/ProyectoBloqueII/Ninosyninas')
-        os.system('code .')
-        if dvs ==1:
-            os.chdir('/Users/fhva/Documents')
-        elif dvs ==2:
-            os.chdir(r'C:/Users/ferva/Documents')
-        totalProgramas = 3
+        totalProgramas = fun.bloque2(dvs)
         
     elif interruptor == 'progra' or interruptor == 'Progra':
-        print('Lanzando sus programas...')
-        time.sleep(2)
-        webbrowser.open_new_tab('https://experiencia21.tec.mx/courses/186016')
-        if dvs == 1:
-            os.chdir('ProgramacionAvanzada')
-        elif dvs == 2:
-            os.chdir(r'C:/Users/ferva/Documents/ProgramacionAvanzada')
-        os.system('code .')
-        if dvs ==1:
-            os.chdir('/Users/fhva/Documents')
-        elif dvs ==2:
-            os.chdir(r'C:/Users/ferva/Documents')
-        totalProgramas = 3
+        totalProgramas = tec.progra(dvs)
 
     if interruptor == 'quantitative' or interruptor == 'quantum':
-        print('Lanzando sus programas...')
-        time.sleep(2)
-        webbrowser.open_new_tab('https://experiencia21.tec.mx/courses/186016')
-        if dvs == 1:
-            os.chdir('QuanitiativeMethodsandSimulations')
-        elif dvs == 2:
-            os.chdir(r'C:/Users/ferva/Documents/QuanitiativeMethodsandSimulations')
-        os.system('code .')
-        if dvs ==1:
-            os.chdir('/Users/fhva/Documents')
-        elif dvs ==2:
-            os.chdir(r'C:/Users/ferva/Documents')
-        totalProgramas = 3
-    
+        totalProgramas = tec.qmas(dvs)
 
     elif interruptor == 'R2G':
-        print('Lanzando sus programas...')
-        
-        if dvs ==1:
-            os.system('open -a "/Applications/Notion.app"')
-        elif dvs ==2:
-            print('Falta investigar como abrir Notion desde PC')
-        time.sleep(2)
-        webbrowser.open_new('https://www.youtube.com/watch?v=bmVKaAV_7-A')
-        webbrowser.open_new('https://www.google.com/')
-        if dvs ==1:
-            os.chdir('/Users/fhva/Documents/Ready2Go')
-        elif dvs ==2:
-            os.chdir(r'C:/Users/ferva/Documents/Ready2Go')
-        os.system('code .')
-        totalProgramas = 4
+        totalProgramas = fun.readyconf(dvs)
 
     elif interruptor == 'Relax' or interruptor == 'relax':
         if dvs ==1:
