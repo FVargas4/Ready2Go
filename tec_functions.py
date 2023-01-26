@@ -48,5 +48,16 @@ def qmas(dvs):
     os.system('code .')
     fun.returnToDocuments()
     return 3
-
+def ldaw(dvs):
+    print('Lanzando sus programas...')
+    webbrowser.open_new_tab('https://www.youtube.com/watch?v=bmVKaAV_7-A')
+    if dvs is True:
+        os.chdir('LDAW')
+    elif dvs is False:
+        os.chdir(r'C:/Users/ferva/Documents/LDAW')
+    os.system('code .')
+    if dvs is True:
+        os.chdir('/Users/fhva/Documents')
+    elif dvs is False:
+        os.chdir(r'C:/Users/ferva/Documents')
 
